@@ -1,0 +1,100 @@
+{
+  "status": "COMPLETE",
+  "seed": 20260807,
+  "epochs": 100,
+  "imgsz": 1280,
+  "batch": 2,
+  "workers": 0,
+  "patience": 30,
+  "output": "outputs/1280",
+  "runs": [
+    {
+      "name": "direct_baseline_fishdetm",
+      "source_checkpoint": "data/fishdetm_pretrained/fishdetm_yolov8s_baseline_best.pt",
+      "source_sha256": "a84083be7527ae97c216b98f177ab73db9559d5af2c3f7b6374cff2be10fb3a7",
+      "source_nc": 1,
+      "source_names": {
+        "0": "fish"
+      },
+      "dataset": {
+        "yaml": "data/ablation/yolo7/data.yaml",
+        "images": 270,
+        "labels": 270,
+        "boxes": 6041,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "best": "outputs/1280/runs/direct_baseline_fishdetm/weights/best.pt"
+    },
+    {
+      "name": "direct_p2_fishdetm",
+      "source_checkpoint": "data/fishdetm_pretrained/fishdetm_yolov8s_p2_best.pt",
+      "source_sha256": "082af54cc411e60d4a093e8cd927ce84648a343001007f6ce1f6aec88d2475f5",
+      "source_nc": 1,
+      "source_names": {
+        "0": "fish"
+      },
+      "dataset": {
+        "yaml": "data/ablation/yolo7/data.yaml",
+        "images": 270,
+        "labels": 270,
+        "boxes": 6041,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "best": "outputs/1280/runs/direct_p2_fishdetm/weights/best.pt"
+    },
+    {
+      "name": "detector_baseline_fishdetm",
+      "source_checkpoint": "data/fishdetm_pretrained/fishdetm_yolov8s_baseline_best.pt",
+      "source_sha256": "a84083be7527ae97c216b98f177ab73db9559d5af2c3f7b6374cff2be10fb3a7",
+      "source_nc": 1,
+      "source_names": {
+        "0": "fish"
+      },
+      "dataset": {
+        "yaml": "data/ablation/yolo_fish/data.yaml",
+        "images": 270,
+        "labels": 270,
+        "boxes": 6041,
+        "classes": [
+          0
+        ]
+      },
+      "best": "outputs/1280/runs/detector_baseline_fishdetm/weights/best.pt"
+    },
+    {
+      "name": "detector_p2_fishdetm",
+      "source_checkpoint": "data/fishdetm_pretrained/fishdetm_yolov8s_p2_best.pt",
+      "source_sha256": "082af54cc411e60d4a093e8cd927ce84648a343001007f6ce1f6aec88d2475f5",
+      "source_nc": 1,
+      "source_names": {
+        "0": "fish"
+      },
+      "dataset": {
+        "yaml": "data/ablation/yolo_fish/data.yaml",
+        "images": 270,
+        "labels": 270,
+        "boxes": 6041,
+        "classes": [
+          0
+        ]
+      },
+      "best": "outputs/1280/runs/detector_p2_fishdetm/weights/best.pt"
+    }
+  ]
+}
