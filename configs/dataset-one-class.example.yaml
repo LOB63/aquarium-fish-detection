@@ -1,0 +1,6 @@
+path: /absolute/path/to/data/ablation/yolo_fish
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: fish

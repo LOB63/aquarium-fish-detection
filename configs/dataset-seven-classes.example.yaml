@@ -1,0 +1,13 @@
+# Set path to the absolute location of your seven-class dataset before training.
+path: /absolute/path/to/data/ablation/yolo7
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: clownfish
+  1: blue_tang
+  2: sailfin_tang
+  3: blue_damselfish
+  4: yellowtail_blue_damselfish
+  5: anthias
+  6: other_fish

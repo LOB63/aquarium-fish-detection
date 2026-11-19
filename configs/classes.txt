@@ -1,0 +1,7 @@
+clownfish
+blue_tang
+sailfin_tang
+blue_damselfish
+yellowtail_blue_damselfish
+anthias
+other_fish
