@@ -1,0 +1,8 @@
+# Original main experiment environment; select the PyTorch build for your device.
+ultralytics==8.2.19
+torch==2.7.1
+torchvision==0.22.1
+numpy
+Pillow
+PyYAML
+pycocotools
